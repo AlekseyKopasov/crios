@@ -1,9 +1,136 @@
 .main-header {
-  padding-top: 57px;
+  min-height: 1478px;
+  padding-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
   background-image: url("/image/bg_header.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: -49px 413px;
+}
+
+.main-header__top {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header__nav {
+  width: 62px;
+  height: 62px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.55);
+}
+
+.main-header__nav-list {
+  display: none;
+}
+
+.main-header__logo {
+  position: relative;
+
+  &::before {
+    width: 415px;
+    height: 415px;
+    content: "";
+    position: absolute;
+    top: -415px;
+    left: 50%;
+    margin-top: 107px;
+    margin-left: -207px;
+    border-radius: 50%;
+    box-shadow: 0 0 60px 0 #000000;
+    background-color: #ffffff;
+  }
+}
+
+.main-header__logo-text {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+
+  @include content-font();
+
+  font-size: 48px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #43a9ff;
+  opacity: 0.99;
+}
+
+.main-header__logo-description {
+  font-family: "Montserrat-bold", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4b5863;
+  opacity: 0.15;
+}
+
+.main-header__search {
+  width: 62px;
+  height: 62px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 60px 0 #000000;
+}
+
+.main-header__search-input {
+  display: none;
+}
+
+.main-header__banner {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__headline {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+
+  @include content-font();
+
+  font-size: 48px;
+  line-height: 18px;
+  color: #000000;
+  text-align: center;
+}
+
+.main-header__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 84px;
+
+  @include content-font();
+
+  font-size: 18px;
+  line-height: 18px;
+  color: #4b5863;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.main-header__btn {
+  padding: 20px 42px;
+  font-family: "Montserrat-bold", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #43a9ff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.35);
 }
