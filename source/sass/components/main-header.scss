@@ -1,19 +1,19 @@
 .main-header {
   min-height: 1478px;
-  padding-top: 60px;
+  padding-top: 55px;
   padding-left: 15px;
   padding-right: 15px;
   background-image: url("/image/bg_header.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: -49px 413px;
+  background-size: 100%;
+  background-position: 0 432px;
 }
 
 .main-header__top {
   width: 1500px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 250px;
+  padding-bottom: 255px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -40,7 +40,7 @@
     height: 415px;
     content: "";
     position: absolute;
-    top: -415px;
+    top: -372px;
     left: 50%;
     margin-top: 107px;
     margin-left: -207px;
@@ -105,6 +105,7 @@
   line-height: 18px;
   color: #000000;
   text-align: center;
+  letter-spacing: 0.5px;
 }
 
 .main-header__description {
@@ -122,7 +123,7 @@
 }
 
 .main-header__btn {
-  padding: 20px 42px;
+  padding: 18px 42px 13px 42px;
   font-family: "Montserrat-bold", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
