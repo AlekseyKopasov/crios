@@ -1,0 +1,51 @@
+.features {
+  width: 1500px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.features__headline-description {
+  margin: 0;
+  padding: 0;
+  padding-right: 47px;
+  padding-bottom: 35px;
+
+  @include content-font();
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #4b5863;
+  opacity: 0.25;
+}
+
+.features__headline {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 187px;
+
+  @include content-font();
+
+  font-size: 48px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #000000;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  @include list-reset();
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.features__item {
+  width: 345px;
+  text-align: center;
+}
