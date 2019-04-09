@@ -1,5 +1,8 @@
 .features {
   width: 1500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -24,7 +27,7 @@
 .features__headline {
   margin: 0;
   padding: 0;
-  padding-bottom: 187px;
+  padding-bottom: 200px;
 
   @include content-font();
 
@@ -37,6 +40,7 @@
 
 .features__list {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
   @include list-reset();
@@ -48,4 +52,49 @@
 .features__item {
   width: 345px;
   text-align: center;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
+
+  @include content-font();
+
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  text-align: center;
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  @include content-font();
+
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #4b5863;
+  opacity: 0.35;
+}
+
+.features__btn {
+  padding: 18px 42px 13px 42px;
+  font-family: "Montserrat-bold", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #43a9ff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  border-radius: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.35);
 }
