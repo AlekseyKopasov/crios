@@ -55,26 +55,26 @@ gulp.task('minifyHtml', () => gulp.src('source/*.html')
   .pipe(gulp.dest('build')));
 
 // Минификация изображений
-gulp.task('images', () => gulp.src('source/image/**/*.{png,jpg,svg}')
+gulp.task('image', () => gulp.src('source/images/**/*.{png,jpg,svg}')
   .pipe(imagemin([
     imagemin.optipng({ optimizationLavel: 3 }),
     imagemin.jpegtran({ progressive: true }),
     imagemin.svgo(),
   ]))
-  .pipe(gulp.dest('source/image')));
+  .pipe(gulp.dest('source/images')));
 
 // Конвертация изображений в формат .webp
-gulp.task('webp', () => gulp.src('source/image/**/*.{png,jpg}')
+gulp.task('webp', () => gulp.src('source/images/**/*.{png,jpg}')
   .pipe(webp({ quality: 90 }))
-  .pipe(gulp.dest('source/image')));
+  .pipe(gulp.dest('source/images')));
 
 // Сборка SVG-спрайта
-gulp.task('sprite', () => gulp.src('source/image/**/*.svg')
+gulp.task('sprite', () => gulp.src('source/images/**/*.svg')
   .pipe(svgStore({
     inlineSvg: true,
   }))
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/image')));
+  .pipe(gulp.dest('build/images')));
 
 // Вставка SVG-спрайта в HTML
 gulp.task('html', () => gulp.src('source/*.html')
@@ -89,7 +89,7 @@ gulp.task('clean', () => del('build'));
 // Коирование файлов в папку build
 gulp.task('copy', () => gulp.src([
   'source/fonts/**/*.{woff,woff2}',
-  'source/image/**',
+  'source/images/**',
   'source/js/lib/*.js',
 ], {
   base: 'source',
@@ -109,7 +109,7 @@ gulp.task('server', () => {
 
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
   gulp.watch('source/*.html', gulp.series('html', 'refresh'));
-  gulp.watch('source/image/*.svg', gulp.series('sprite', 'html', 'refresh'));
+  gulp.watch('source/images/*.svg', gulp.series('sprite', 'html', 'refresh'));
   gulp.watch('source/js/*.js', gulp.series('build', 'refresh'));
 });
 
