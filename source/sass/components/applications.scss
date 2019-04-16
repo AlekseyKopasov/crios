@@ -1,0 +1,101 @@
+.applications {
+  width: auto;
+  padding-bottom: 165px;
+  overflow: hidden;
+}
+
+.applications__list {
+  @include list-reset();
+
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.applications__item {
+  display: flex;
+  text-align: center;
+  padding-top: 160px;
+}
+
+.applications__item:nth-child(2n) {
+  padding-top: 0;
+}
+
+.applications__item div {
+  width: 50%;
+}
+
+.applications__block-image {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: -246px;
+    left: -202px;
+    width: 668px;
+    height: 100%;
+    background-image: url("/images/icon_snowflake-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    overflow: hidden;
+  }
+}
+
+.applications__img {
+  width: 446px;
+  height: 665px;
+}
+
+.applications__item:nth-child(2n) .applications__block-image {
+  order: 2;
+  padding-top: 126px;
+
+  &::after {
+    background-image: url("/images/icon_snowflake-2.png");
+    top: 374px;
+    left: 319px;
+  }
+}
+
+.applications__block-description {
+  padding-top: 193px;
+  padding-left: 13px;
+  text-align: left;
+}
+
+.applications__block-title {
+  margin: 0;
+  padding: 50px 0;
+
+  @include content-font();
+
+  font-size: 48px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #43a9ff;
+}
+
+.applications__item:nth-child(2n) .applications__block-title {
+  padding: 185px 0 52px 185px;
+}
+
+.applications__block-text {
+  width: 510px;
+  display: block;
+
+  @include content-font();
+
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0.3px;
+  color: rgba(75, 88, 99, 0.35);
+}
+
+.applications__item:nth-child(2n) .applications__block-text {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  padding-left: 190px;
+}

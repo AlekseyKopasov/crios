@@ -3,12 +3,7 @@ html {
   margin: 0 auto;
   padding: 0;
 
-  // @include font;
-
-  font-size: 15px;
-  font-style: normal;
-  line-height: 18px;
-  color: $text-color;
+  @include content-font();
 }
 
 html {
@@ -17,6 +12,7 @@ html {
 
 body {
   min-width: 1200px;
+  width: 2000px; // dev only
 }
 
 *,
