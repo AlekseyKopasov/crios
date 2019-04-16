@@ -26,10 +26,6 @@
 }
 
 .applications__block-image {
-    position: relative;
-}
-
-.applications__block-image {
   position: relative;
 
   &::after {
@@ -71,7 +67,6 @@
 
 .applications__block-title {
   margin: 0;
-  padding: 0;
   padding: 50px 0;
 
   @include content-font();
@@ -104,5 +99,3 @@
   padding: 0;
   padding-left: 190px;
 }
-
-
