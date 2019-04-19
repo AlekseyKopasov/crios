@@ -43,5 +43,16 @@
   border: none;
   border-radius: 30px;
   background-color: #ffffff;
-  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.learn-more__btn:hover,
+.learn-more__btn:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: 1px solid #028bfc;
+}
+
+.learn-more__btn:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
