@@ -1,6 +1,6 @@
 .learn-more {
   width: auto;
-  min-height: 1529px;
+  min-height: 1485px;
   margin: 0 auto;
   text-align: center;
 
@@ -36,12 +36,25 @@
 .learn-more__btn {
   margin: 0;
   padding: 25px 78px 20px 78px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 1;
   color: #43a9ff;
   text-transform: lowercase;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 30px;
   background-color: #ffffff;
-  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.45);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.learn-more__btn:hover,
+.learn-more__btn:focus {
+  outline: none;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(2, 139, 252, 0.2);
+}
+
+.learn-more__btn:active {
+  outline: none;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
