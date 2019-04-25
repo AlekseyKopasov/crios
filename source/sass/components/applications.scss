@@ -14,26 +14,24 @@
 .applications__item {
   display: flex;
   text-align: center;
-  padding-top: 160px;
+  padding-top: 98px;
 }
 
 .applications__item:nth-child(2n) {
   padding-top: 0;
 }
 
-.applications__item div {
-  width: 50%;
-}
-
 .applications__block-image {
+  width: 40%;
+  padding-left: 141px;
   position: relative;
 
   &::after {
     position: absolute;
     content: "";
-    top: -246px;
-    left: -202px;
-    width: 668px;
+    top: -159px;
+    left: 18px;
+    width: 404px;
     height: 100%;
     background-image: url("/images/icon_snowflake-1.png");
     background-repeat: no-repeat;
@@ -44,13 +42,13 @@
 }
 
 .applications__img {
-  width: 446px;
-  height: 665px;
+  width: 270px;
+  height: auto;
 }
 
 .applications__item:nth-child(2n) .applications__block-image {
   order: 2;
-  padding-top: 126px;
+  padding: 62px 0 0 147px;
 
   &::after {
     background-image: url("/images/icon_snowflake-2.png");
@@ -60,36 +58,40 @@
 }
 
 .applications__block-description {
-  padding-top: 193px;
-  padding-left: 13px;
-  text-align: left;
+  width: 30%;
+  padding-left: 9px;
+  padding-top: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .applications__block-title {
   margin: 0;
-  padding: 50px 0;
+  padding: 0;
+  padding-bottom: 25px;
 
   @include content-font();
 
-  font-size: 48px;
+  font-size: 25px;
   line-height: 18px;
-  letter-spacing: 0.5px;
+  letter-spacing: 2.5px;
   color: #43a9ff;
 }
 
 .applications__item:nth-child(2n) .applications__block-title {
-  padding: 185px 0 52px 185px;
+  padding: 70px 0 25px 260px;
 }
 
 .applications__block-text {
-  width: 510px;
+  width: 500px;
+  padding-right: 200px;
   display: block;
 
   @include content-font();
 
-  font-size: 16px;
-  line-height: 36px;
-  letter-spacing: 0.3px;
+  font-size: 10px;
+  line-height: 22px;
   color: rgba(75, 88, 99, 0.35);
 }
 
@@ -97,5 +99,5 @@
   width: auto;
   margin: 0;
   padding: 0;
-  padding-left: 190px;
+  padding: 0 480px 0 258px;
 }
