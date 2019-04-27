@@ -20,14 +20,13 @@
 }
 
 .projects__img {
-  width: 600px;
+  width: 100%;
   height: 100%;
 }
 
 .projects__block-description,
 .projects__block-image {
   width: 50%;
-  max-height: 337px;
 }
 
 .projects__block-description {
@@ -40,7 +39,7 @@
 
 .projects__item:nth-child(2n) .projects__block-description {
   text-align: left;
-  padding-left: 156px;
+  padding-left: 200px;
 }
 
 .projects__title {

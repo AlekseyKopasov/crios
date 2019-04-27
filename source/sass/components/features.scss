@@ -26,7 +26,6 @@
 .features__headline {
   margin: 0;
   padding: 0;
-  padding-bottom: 110px;
 
   @include content-font();
 
@@ -50,9 +49,48 @@
 }
 
 .features__item {
+  position: relative;
+  padding-top: 110px;
   width: 225px;
   text-align: center;
   margin-bottom: 50px;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 59px;
+    left: 95px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/bg_features-sprite.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.features__item:nth-child(2) {
+  &::before {
+    width: 40px;
+    height: 28px;
+    background-position: -42px 0;
+    left: 95px;
+  }
+}
+
+.features__item:nth-child(3) {
+  &::before {
+    background-position: -107px 0;
+  }
+}
+
+.features__item:nth-child(4) {
+  &::before {
+    width: 60px;
+    background-position: -157px 0;
+    left: 86px;
+  }
 }
 
 .features__title {
