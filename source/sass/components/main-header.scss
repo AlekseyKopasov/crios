@@ -1,19 +1,20 @@
 .main-header {
-  min-height: 1478px;
-  margin-bottom: 50px;
-  padding-top: 55px;
+  width: 100%;
+  margin-bottom: 97px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 450px;
   background-image: url("/images/bg_header.png");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0 432px;
+  background-position: 0 225px;
 }
 
 .main-header__top {
+  width: 960px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 255px;
+  padding-bottom: 151px;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -21,12 +22,15 @@
 }
 
 .main-header__nav {
-  width: 62px;
-  height: 62px;
+  width: 35px;
+  height: 35px;
+  margin-top: 35px;
+  margin-left: 25px;
   background-color: #ffffff;
   background-image: url("/images/icon_menu.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px 10px;
   border-radius: 50%;
   border: 1px solid transparent;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -53,28 +57,28 @@
   position: relative;
 
   &::before {
-    width: 415px;
-    height: 415px;
+    width: 250px;
+    height: 250px;
     content: "";
     position: absolute;
-    top: -372px;
+    top: -127px;
     left: 50%;
-    margin-top: 107px;
-    margin-left: -207px;
+    margin-left: -125px;
     border-radius: 50%;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+    z-index: -1;
   }
 }
 
 .main-header__logo-text {
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 38px;
 
   @include content-font();
 
-  font-size: 48px;
+  font-size: 30px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -83,9 +87,11 @@
 }
 
 .main-header__logo-description {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat-bold", "Helvetica", "Arial", sans-serif;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
   text-align: center;
   text-transform: uppercase;
   color: rgba(74, 87, 98, 0.35);
@@ -93,12 +99,15 @@
 
 .main-header__search {
   position: relative;
-  width: 62px;
-  height: 62px;
+  width: 35px;
+  height: 35px;
+  margin-top: 35px;
+  margin-right: 25px;
   background-color: #ffffff;
   background-image: url("/images/icon_search.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 10px 10px;
   border-radius: 50%;
   border: 1px solid transparent;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -122,10 +131,10 @@
   position: absolute;
   border: 1px solid #dddddd;
   border-radius: 5px;
-  top: 7px;
-  right: 68px;
-  width: 500px;
-  height: 50px;
+  top: 0;
+  right: 42px;
+  width: 267px;
+  height: 35px;
   padding: 10px 15px;
 
   @include content-font();
@@ -148,35 +157,35 @@
 .main-header__headline {
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 
   @include content-font();
 
-  font-size: 48px;
+  font-size: 28px;
   line-height: 18px;
+  letter-spacing: 0.9px;
   color: #000000;
   text-align: center;
-  letter-spacing: 0.5px;
 }
 
 .main-header__description {
   margin: 0;
   padding: 0;
-  padding-bottom: 84px;
+  padding-bottom: 52px;
 
   @include content-font();
 
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 11px;
+  line-height: 1;
   color: rgba(74, 87, 98, 0.35);
   text-align: center;
 }
 
 .main-header__btn {
-  padding: 18px 42px 13px 42px;
+  padding: 10px 20px;
   font-family: "Montserrat-bold", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 8px;
+  line-height: 1;
   text-align: center;
   color: #43a9ff;
   text-transform: uppercase;
